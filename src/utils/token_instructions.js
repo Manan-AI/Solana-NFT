@@ -7,8 +7,6 @@ import {
 
 import { 
   TOKEN_PROGRAM_ID,
-  ATACC_PROGRAM_ID,
-  WRAPPED_SOL_MINT,
   MEMO_PROGRAM_ID,
 } from './program_addresses'
 

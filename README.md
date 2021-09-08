@@ -1,25 +1,5 @@
-# 🏗 Solana App Scaffold
-Scaffolding for a dapp built on Solana
-    
-# Quickstart
+# 🏗 Solana NFT 
 
-```bash
-git clone https://github.com/solana-labs/dapp-scaffold.git
-
-cd dapp-scaffold
-```
-
-```bash
-
-npm i
-
-```
-
-```bash
-
-npm start
-
-```
 
 # Environment Setup
 1. Install Rust from https://rustup.rs/
@@ -34,38 +14,9 @@ Run the following from the program/ subdirectory:
 $ cargo build-bpf
 $ cargo test-bpf
 ```
-# Directory structure
 
-## program
-
-Solana program template in Rust
-
-### program/src/lib.rs
-* process_instruction function is used to run all calls issued to the smart contract
-
-## src/actions
-
-Setup here actions that will interact with Solana programs using sendTransaction function
-
-## src/contexts
-
-React context objects that are used propagate state of accounts across the application
-
-## src/hooks
-
-Generic react hooks to interact with token program:
-* useUserBalance - query for balance of any user token by mint, returns:
-    - balance
-    - balanceLamports
-    - balanceInUSD
-* useUserTotalBalance - aggregates user balance across all token accounts and returns value in USD
-    - balanceInUSD
-* useAccountByMint
-* useTokenName
-* useUserAccounts
-
-## src/views
-
-* home - main page for your app
-* faucet - airdrops SOL on Testnet and Devnet
-# nft
+# Build Frontend
+```bash
+yarn install
+yarn start
+```
